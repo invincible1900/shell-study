@@ -20,3 +20,18 @@ if (( $a == 10 && $b == 10 )); then
 else
 	echo "false"
 fi
+
+ls xxxx 2>/dev/null
+if (( $? == 0 )); then
+	echo ok
+else
+	echo no
+fi
+
+echo $?
+if (( $? == 0 )); then
+	echo ok
+else
+	echo no
+fi
+
