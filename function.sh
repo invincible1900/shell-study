@@ -12,3 +12,15 @@ echo $1
 p "Hello"
 echo $?
 echo $1
+
+
+hex(){
+        printf '0x%x\n' $1
+}
+
+bin(){
+        python3 -c "print(bin($1))"
+}
+
+hex 255
+bin 255

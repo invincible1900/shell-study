@@ -16,3 +16,7 @@ ssh root@$IP "echo '' >> ~/.ssh/authorized_keys; cat ~/.ssh/key.tmp >> ~/.ssh/au
 # 执行命令
 ssh root@$IP "uname -a"
 ssh root@$IP "cat ~/.ssh/authorized_keys"
+
+
+# bash 可以当跳板时候用
+ssh -t root@$IP "cd /tmp ; bash"
